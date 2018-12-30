@@ -1,0 +1,54 @@
+{
+  "name": "coinadamus",
+  "version": "1.0.0",
+  "description": "real-time cryptocurrency course prediction with charts front-end",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "explore": "node explore.js",
+    "bitcoin": "node index.js bitcoin",
+    "nano": "node index.js nano",
+    "ethereum": "DEBUG=coinpusher:* node index.js ethereum",
+    "litecoin": "DEBUG=coinpusher:* node index.js litecoin"
+  },
+  "author": "SpiryBTC <office@spirymedia.ro>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "async": "^2.5.0",
+    "bluebird": "^3.5.0",
+    "brain.js": "^1.6.1",
+    "brainjs": "^0.7.4",
+    "debug": "^4.1.1",
+    "express": "^4.15.4",
+    "lodash": "^4.17.5",
+    "moment": "^2.18.1",
+    "neataptic": "^1.4.4",
+    "node-binance-api": "^0.4.22",
+    "node-bitstamp": "^2.2.0",
+    "synaptic": "^1.1.2",
+    "uuid": "^3.1.0",
+    "uws": "^8.14.1"
+  },
+  "keywords": [
+    "real-time",
+    "cryptocurrency",
+    "bitstamp",
+    "neuronal",
+    "network",
+    "lstm",
+    "prediction",
+    "charts",
+    "live",
+    "trades",
+    "trade",
+    "bot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiryMedia/Coinadamus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SpiryMedia/Coinadamus/issues"
+  },
+  "homepage": "https://github.com/SpiryMedia/Coinadamus#readme"
+}

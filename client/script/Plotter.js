@@ -49,17 +49,6 @@ class Plotter {
             return Promise.resolve({});
         }
 
-        const nanobtc = {
-            type: "scatter",
-            mode: "lines",
-            name: "nano",
-            x: [],
-            y: [],
-            line: {
-                color: this.color 
-            }
-        };
-
         const btceur = {
             type: "scatter",
             mode: "lines",
@@ -93,7 +82,7 @@ class Plotter {
             }
         };
 
-        const plotData = [nanobtc, btceur, etheur, ltceur];
+        const plotData = [btceur, etheur, ltceur];
             
         const plotLayout = {
             title: this.title, 
@@ -291,7 +280,6 @@ class Plotter {
     updatePlot(newStreamData = null, newPredData = null, constPredData = null){
 
         if(newStreamData){
-            //console.log("000000000000000000000", JSON.stringify(newStreamData))
             Plotly.extendTraces(this.currency, {
                 x: [newStreamData.x],
                 y: [newStreamData.y]

@@ -39,7 +39,7 @@ class Stream {
         };
         
         this.connection.onmessage = message => {
-
+            
             let data = message.data;
             try {
                 data = JSON.parse(data);
@@ -237,15 +237,9 @@ class Stream {
 
             switch(currency){
 
-                case "nanobtc": 
-                    plotter.updatePerformancePlot(data, 0);
-                break;
-
-                /*
                 case "btceur": 
                     plotter.updatePerformancePlot(data, 0);
                 break;
-                */
 
                 case "etheur":
                     plotter.updatePerformancePlot(data, 1);
